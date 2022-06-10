@@ -1,0 +1,45 @@
+$purple: #6f42c1;
+$gray:#adb5bd;
+$gray1:#eae9e5;
+$gray2: #d6dbde;
+$gray3: #747d8c;
+$secondary: red;
+$dark1:#333;
+
+$light:#fafbfa;
+
+$pink:#ff40a1;
+$pink1:#ff73b9;
+
+$blue:#279eb2;
+$blue1:#2aaac1;
+
+$orange:#f86647;
+$orange1:#fb9b88;
+$orange2:#fa7f67;
+
+//shop button color
+$shopcolor:#ffffff15;
+// $shopcolor1:darkslategray;
+$shopcolor1:#D19C97;
+$shopcolor2:#946661;
+
+$bgsection:rgb(50, 100, 100);
+
+// $green:#00b97d;
+// $green1:#00db93;
+$bg-color:rgba(0,0,0, .05);
+$bg-color1:rgba(0,0,0,0.25);
+$bg-color2:rgba(0,0,0,0.75);
+$bg-color3:rgba(0,0,0,0.1);
+$bg-color4:rgba(0,0,0,0.5);
+
+
+
+//border-color
+$border-color:rgba(255,255,255,0.1);
+
+$width:15rem;
+$height:15rem;
+// $fw-600: 600;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

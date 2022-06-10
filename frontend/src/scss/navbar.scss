@@ -1,0 +1,346 @@
+// body{
+//     color: #666666;
+// }
+nav{
+    border-bottom: 1px solid $border-color;
+}
+.navbar{
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                color: $light;
+                // color: $dark1;
+            }
+        }
+    }
+    width: 100%;
+    height: 80px;
+    
+    z-index: 1100;
+    background-color: transparent;
+    // position: fixed;
+    // transition: height 0.3s, background-color 0.3s;
+
+}
+.navbar-bg{
+    background-color: $shopcolor1;
+}
+
+// ---slider-----
+
+.bgimg{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    // z-index: 998;
+    // opacity: 0;
+}
+
+.bgimg1{
+    @extend .bgimg;
+    background:linear-gradient( $bg-color4 100%, $bg-color4 100%), url("../images/slider/slide-05.jpg");
+    // position: relative;
+    background-position: center;
+}
+.bgimg2{
+    @extend .bgimg;
+    background:linear-gradient( $bg-color4 100%, $bg-color4 100%), url("../images/slider/slide-06.jpg");
+    // position: relative;
+    background-position: center;
+}
+
+.bgimg3{
+    @extend .bgimg;
+    background:linear-gradient( $bg-color4 100%, $bg-color4 100%), url("../images/slider/slide-07.jpg");
+    // position: relative;
+    background-position: center;
+}
+.carousel-indicators .bgimg1{
+    width: 150px;
+    height: 90px;
+    position: relative;
+    background:url("../images/slider/slide-05.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-indicators .bgimg2{
+    width: 150px;
+    height: 90px;
+    position: relative;
+    background:url("../images/slider/slide-06.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.carousel-indicators .bgimg3{
+    width: 150px;
+    height: 90px;
+    position: relative;
+    background:url("../images/slider/slide-07.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-caption{
+    top:40%;
+    h3{
+        font-family: 'Playfair Display', serif;
+        
+    }
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-size: 60px;
+        line-height: 1.1;
+    }
+
+.button {
+    padding: 1em 2em;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: $light;
+    z-index: 1;
+   }
+   
+   .button::after,
+    .button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+   }
+   
+   .button::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: $shopcolor1;
+    border-radius: 50px;
+   }
+   
+   .button::after {
+    transform: translate(0px, 0px);
+    width: 10px;
+    height: 10px;
+    background: $shopcolor;
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
+   }
+   
+   .button:hover::before {
+    transform: translate(5%, 20%);
+    width: 10px;
+    height: 10px;
+   }
+   
+   .button:hover::after {
+    border-radius: 50px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+   }
+   
+   .button:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+   }
+}
+
+// -------------------------------servicesection---------------------
+.container-fluid{
+    .row{
+        .section{
+            background-color: $shopcolor1;
+        }
+        .section:hover{
+            background-color: $shopcolor2;
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// ---------------------------------------------------------------------------------------start--------
+/* Mixed */
+
+/* For both inside page's main heading and 'view me' text on card front cover */
+// .inside-page_heading,
+// .card-front_text-view {
+//     font-weight: 800;
+//     color: $gray3;
+// }
+
+/* Buttons =================================================*/
+  
+// .inside-page_btn {
+//     border: 3px solid;
+//     border-radius: .5rem;
+//     font-weight: 600;
+//     transition: all .3s ease;
+//     z-index: 10;
+// }
+
+// .inside-page_btn::before { 
+//     content: "";
+//     height: 100%;
+//     left: 0;
+//     position: absolute;
+//     top: 0;
+//     transform: scaleY(0);
+//     transition: all .3s ease;
+//     width: 100%;
+//     z-index: -1;
+//     background-color: $pink;
+// }
+
+// .inside-page_btn--city { 
+//     border-color: $pink;
+//     color: $pink;
+// }
+// .inside-page_btn--ski { 
+//     border-color: $blue;
+//     color: $blue;
+// }
+
+// .inside-page_btn--ski::before { 
+//     background-color: $blue;
+// }
+
+// .inside-page_btn--beach { 
+//     border-color: $orange2;
+//     color: $orange2;
+// }
+
+// .inside-page_btn--beach::before { 
+//     background-color: $orange2;
+// }
+
+// .inside-page_btn:hover { 
+//     color: $light;
+// }
+
+// .inside-page_btn:hover::before { 
+//     transform: scaleY(1);
+// }
+  
+/* Layout Structure=========================================*/
+
+/* Container to hold all cards in one place */
+// .card-area {
+//     justify-content: space-evenly;
+// }
+
+/* Card ============================================*/
+/* A container to hold the flip card and the inside page */
+// .card {
+//     background-color: $bg-color;
+//     box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
+//     height: $height;
+//     transition: all 1s ease;
+//     width: $width;
+// }
+
+/* Flip card - covering both the front and inside front page */
+/* An outer container to hold the flip card. This excludes the inside page */
+// .flip-card {
+//     height: $height;
+//     perspective: 100rem;
+//     transition: all 1s ease;
+//     width: $width;
+//     z-index: 100;
+// }
+
+/* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
+/* This is done so content in the inside page can be selected */
+// .flip-card > * {
+//     visibility: visible;
+// }
+
+/* An inner container to hold the flip card. This excludes the inside page */
+// .flip-card_container {
+//     transform-origin: left;
+//     transform-style: preserve-3d;
+//     transition: all 1s ease;
+// }
+
+// .card-front,
+// .card-back {
+//     backface-visibility: hidden;
+// }
+  
+/* Styling for the front side of the flip card */
+/* container for the front side */
+// .card-front {
+//     height: $height;
+//     width:$width;
+// }
+
+/* Front side's top section */
+// .card-front_tp {
+//     clip-path: polygon(0 0, 100% 0, 100% 90%, 57% 90%, 50% 100%, 43% 90%, 0 90%);
+//     height: $height - 3rem;
+//     padding: .75rem;
+// }
+// .card-front_tp--city {
+//     background: linear-gradient(
+//         to bottom,
+//         $pink1,
+//         $pink
+//     );
+// }
+// .card-front_tp--ski {
+//     background: linear-gradient(
+//         to bottom,
+//         $blue1,
+//         $blue
+//     );
+// }
+// .card-front_tp--beach {
+//     background: linear-gradient(
+//         to bottom,
+//         $orange1,
+//         $orange
+//     );
+// }
+/* Styling for the back side of the flip card */
+// .card-back {
+//     transform: rotateY(180deg);
+// }
+
+/* Inside page */
+// .inside-page {
+//     box-shadow: inset 20rem 0px 5rem -2.5rem $bg-color1;
+//     transition: all 1s ease;
+//     width: $width;
+//     z-index: 1;
+// }
+
+/* Functionality ====================================*/
+/* This is to keep the card centered (within its container) when opened */
+// .card:hover {
+//     box-shadow:-.1rem 1.7rem 6.6rem -3.2rem $bg-color2;
+//     width: 30rem;
+// }
+/* When the card is hovered, the flip card container will rotate */
+// .card:hover .flip-card_container {
+//     transform: rotateY(-180deg);
+// }
+/* When the card is hovered, the shadow on the inside page will shrink to the left */
+// .card:hover .inside-page {
+//     box-shadow: inset 1rem 0px 5rem -2.5rem $bg-color3;
+// } ---------------------------------------------------------------------------------------end--------
