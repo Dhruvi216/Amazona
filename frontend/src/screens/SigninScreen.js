@@ -30,7 +30,7 @@ export default function SigninScreen(props) {
         password,
       });
       localStorage.setItem('userInfo', JSON.stringify(data));
-      navigate('redirect');
+      navigate('/');
     } catch (error) {
       setError(error);
     }
