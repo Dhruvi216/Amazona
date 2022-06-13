@@ -32,7 +32,11 @@ export default function Product(props) {
           </div>
         </div>
         <button className="card-button">
-          <Link to={`/product/${product._id}`}>More info</Link>
+          <Link
+            to={`/product/${product._id}`}
+            className="text-light text-decoration-none">
+            More info
+          </Link>
         </button>
       </div>
 

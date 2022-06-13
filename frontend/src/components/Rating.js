@@ -60,7 +60,7 @@ export default function Rating(props) {
           }
         ></i>
       </span>
-      <span>{numReviews + ' reviews '}</span>
+      <span className="ms-4">{numReviews + ' reviews '}</span>
     </div>
   );
 }

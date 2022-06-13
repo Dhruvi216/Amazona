@@ -11451,7 +11451,7 @@ nav {
   width: 60%;
   border-radius: 1rem;
   border: none;
-  background-color: #008bf8;
+  background-color: #946661;
   color: #fff;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -11465,12 +11465,21 @@ nav {
 .product-item .text-body {
   color: #868686;
 }
+.product-item .text-body span i {
+  color: #946661;
+}
 .product-item .text-title {
   font-size: 1.5em;
   font-weight: bold;
 }
+.product-item .text-title h4, .product-item .text-title .h4 {
+  color: #D19C97;
+}
+.product-item .text-title :hover h4, .product-item .text-title :hover .h4 {
+  color: #946661;
+}
 .product-item .card:hover {
-  border-color: #008bf8;
+  border-color: #946661;
   -webkit-box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
 }

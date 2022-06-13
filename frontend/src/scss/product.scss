@@ -27,7 +27,7 @@
         width: 60%;
         border-radius: 1rem;
         border: none;
-        background-color: #008bf8;
+        background-color: $shopcolor2;
         color: #fff;
         font-size: 1rem;
         padding: .5rem 1rem;
@@ -41,17 +41,30 @@
        
        .text-body {
         color: rgb(134, 134, 134);
+        span{
+            i{
+                color: $shopcolor2;
+            }
+        }
        }
        
        /*Text*/
        .text-title {
         font-size: 1.5em;
         font-weight: bold;
+        h4{
+            color: $shopcolor1;
+        }
+        :hover{
+            h4{
+                color: $shopcolor2;
+            }
+        }
        }
        
        /*Hover*/
        .card:hover {
-        border-color: #008bf8;
+        border-color: $shopcolor2;
         -webkit-box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
                 box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
        }
