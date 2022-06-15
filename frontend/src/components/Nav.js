@@ -29,11 +29,12 @@ export default function Nav() {
   return (
     <div>
       <nav
-        className={
-          color
-            ? 'navbar navbar-expand-lg navbar-light fixed-top navbar-bg'
-            : 'navbar navbar-expand-lg navbar-light fixed-top'
-        }
+        className="navbar navbar-expand-lg navbar-light navbar-bg"
+        // className={
+        //   color
+        //     ? 'navbar navbar-expand-lg navbar-light fixed-top navbar-bg'
+        //     : 'navbar navbar-expand-lg navbar-light fixed-top'
+        // }
       >
         <div className="container-fluid">
           <Link className="navbar-brand text-light" to="#">
@@ -52,7 +53,7 @@ export default function Nav() {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item ">
                 <Link className="nav-link active " aria-current="page" to="/">
                   Home
                 </Link>
@@ -78,7 +79,7 @@ export default function Nav() {
                 </Link>
               </li>
 
-              <li className="nav-item ps-2">
+              <li className="nav-item">
                 <Link
                   className="nav-link active "
                   aria-current="page"
